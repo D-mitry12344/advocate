@@ -24,11 +24,29 @@
 }
 
 @keyframes move-banners{
-	from{
+	0%{
 		opacity: 1;
 	}
 
-	to{ opacity: 0; }
+	20%{ opacity: 0.5; 
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes move-banners-ret{
+	0%{
+		opacity: 0;
+	}
+
+	20%{ opacity: 0.5; 
+	}
+
+	100%{
+		opacity: 1;
+	}
 }
 
 @media (min-width: 700px) {
@@ -1273,14 +1291,14 @@
 	}
 
 	.banner_header__btn-left{
-		margin-left: 391px;
-		margin-top: 227px;
+		margin-left: 31px;
+		margin-top: 427px;
 		transform: rotate(180deg);
 	}
 
 	.banner_header__btn-right{
-		margin-left: 1489px;
-		margin-top: -273px;
+		margin-left: 300px;
+		margin-top: -73px;
 	}
 	/*
 		Второй блок
@@ -1342,6 +1360,7 @@
 
 	.service__myself-service{
 		display: flex;
+		flex-wrap: wrap;
 		margin-top: 27px;
 		margin-left: -20px;
 	}
@@ -1375,13 +1394,13 @@
 		margin-left: -3px;
 	}
 
-	.service__myself-service_advocate{
+	/*.service__myself-service_advocate{
 		display: none;
 	}
 
 	.service__myself-service_audit{
 		display: none;
-	}
+	}*/
 
 	.service__myself-service_advocate-img{
 		margin-top: -7px;
@@ -1938,7 +1957,7 @@
 	}
 
 	.news_items-small-second{
-		margin-left: -5px;
+		margin-left: 32px;
 	}
 
 	.news_items-small-second_date{
