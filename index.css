@@ -1540,7 +1540,7 @@
 
 	.company__btn:hover{
 		transform: scale(1.2);
-		background: rgb( 255, 255, 255, 0.3);
+		background: rgb( 255, 255, 255, 0.2);
 	}
 
 	.company__btn-text{
