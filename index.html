@@ -3,7 +3,9 @@
 	<head>
 		<title>ЛУЧШИЕ ЮРИСТЫ</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="index.css">
+		<!--<link rel="stylesheet" href="mobile.css">-->
 		<link rel="shortcut icon" href="img/service/housed.svg" type="image/x-icon">
 	</head>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f8c9158f-2ba3-4738-be02-9290afaf0b1e" type="text/javascript"></script>
@@ -259,8 +261,8 @@
 							<p class="news_header__btn-text">Открыть все новости</p>
 						</div>
 					</div>
-					<div class="news_items">
-							<div class="news_items-big">
+					<div class="news_items" id="news">
+							<div class="news_items-block news_items-big">
 								<div class="news_items-big_block">
 									<img class="" src="img/news/quotes.png">
 								</div>
@@ -275,7 +277,7 @@
 									<p class="news_items-big_info-author">Андрей Ворошилов, генеральный директор компании Bankom</p>
 								</div>
 							</div>
-							<div class="news_items-small news_items-small-first">
+							<div class="news_items-block news_items-block-disabled news_items-small news_items-small-first">
 								<div class="news_items-small_date news_items-small-first_date">
 									<p class="news_items-small_date-text news_items-small-first_date-text">03.04</p>
 								</div>
@@ -290,12 +292,59 @@
 									</p>
 								</div>
 							</div>
-							<div class="news_items-small news_items-small-second">
+							<div class="news_items-block news_items-block-disabled news_items-small news_items-small-second">
 								<div class="news_items-small_date news_items-small-second_date">
 									<p class="news_items-small_date-text news_items-small-second_date-text">03.04</p>
 								</div>
 								<div class="news_items-small_block news_items-small-second_block">
 									<img class="news_items-small_block-img news_items-small-second_block-img" src="img/news/news3.png">
+								</div>
+								<div class="news_items-small_info news_items-small-second_info">
+									<h3 class="news_items-small_info-head news_items-small-second_info-head">Новость компании</h3>
+									<p class="news_items-small_info-text news_items-small-second_info-text">
+										На сегодняшний день, коллектив <br>компании объединяет высокопрофес-<br>сиональных
+										экспертов имеющих <br>специализации в отдельных областях <br>права...»
+									</p>
+								</div>
+							</div>
+					</div>
+					<div class="news_items second news_items-disabled" id="news">
+							<div class="news_items-block news_items-block-disabled news_items-big">
+								<div class="news_items-big_block">
+									<img class="" src="img/news/quotes.png">
+								</div>
+								<div class="news_items-big_info">
+									<h3 class="news_items-big_info-head">А тут вторые новости прикинь)))</h3>
+									<p class="news_items-big_info-text">
+										«На сегодняшний день, коллектив компании объединяет высоко-<br>профессиональных экспертов имеющих 
+										специализации в отдель-<br>ных областях права. На сегодняшний день, коллектив компании<br> объединяет 
+										высокопрофессиональных экспертов имеющих спе-<br>циализации в отдельных областях права. 
+										На сегодняшний день,<br> коллектив компании объединяет высокопрофессиональных экс-<br>пертов имеющих специализации в отдельных областях права...»
+									</p>
+									<p class="news_items-big_info-author">Андрей Ворошилов, генеральный директор компании Bankom</p>
+								</div>
+							</div>
+							<div class="news_items-block news_items-block-disabled news_items-small news_items-small-first">
+								<div class="news_items-small_date news_items-small-first_date">
+									<p class="news_items-small_date-text news_items-small-first_date-text">03.04</p>
+								</div>
+								<div class="news_items-small_block news_items-small-first_block">
+									<img class="news_items-small_block-img news_items-small-first_block-img" src="img/news/news3.png">
+								</div>
+								<div class="news_items-small_info news_items-small-first_info">
+									<h3 class="news_items-small_info-head news_items-small-first_info-head">Новость компании</h3>
+									<p class="news_items-small_info-text news_items-small-first_info-text">
+										На сегодняшний день, коллектив <br>компании объединяет высокопрофес-<br>сиональных
+										экспертов имеющих <br>специализации в отдельных областях <br>права...»
+									</p>
+								</div>
+							</div>
+							<div class="news_items-block news_items-block-disabled news_items-small news_items-small-second">
+								<div class="news_items-small_date news_items-small-second_date">
+									<p class="news_items-small_date-text news_items-small-second_date-text">03.04</p>
+								</div>
+								<div class="news_items-small_block news_items-small-second_block">
+									<img class="news_items-small_block-img news_items-small-second_block-img" src="img/news/news2.png">
 								</div>
 								<div class="news_items-small_info news_items-small-second_info">
 									<h3 class="news_items-small_info-head news_items-small-second_info-head">Новость компании</h3>
@@ -327,7 +376,7 @@
 					</p>
 					<div class="down__btn-consulation top_info__item top_info__consulation">
 						<div class="top_info_icon top_info__consulation_icon"></div>
-						<p class="top_info_text top_info__consulation_text">Бесплатная консультация</p>
+						<p class="top_info_text top_info__consulation_text down__btn-consulation-text">Бесплатная консультация</p>
 					</div>
 					<div class="top_info__item top_info__number down__info-phone">
 						<div class="top_info_icon top_info__number_icon"></div>
