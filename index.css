@@ -1496,8 +1496,9 @@
 	}
 
 	.company{
-		background: url("img/company/wapper.jpg");
+		background: url("img/company/wapper.jpg") no-repeat;
 		height: 300px;
+		width: 375px;
 		display: flex;
 		flex-wrap: wrap;
 		margin-top: 9px;
@@ -1506,6 +1507,7 @@
 
 	.company-black{
 		height: 300px;
+		width: 375px;
 		background: rgb(0,0,0, 0.5);
 	}
 
@@ -1522,14 +1524,14 @@
 
 	.company__info{
 		margin-top: 23px;
-		width: 350px;
+		width: 300px;
 		margin-left: -1px;
 		line-height: 23.8px;
 	}
 
 	.company__btn{
 		margin-left: 180px;
-		margin-top: -20px;
+		margin-top: -260px;
 	 	padding-top: 0px;
 	 	display: flex;
 	 	border:2px solid #ffc222;
