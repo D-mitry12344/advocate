@@ -1498,6 +1498,8 @@
 	.company{
 		background: url("img/company/wapper.jpg");
 		height: 300px;
+		display: flex;
+		flex-wrap: wrap;
 		margin-top: 9px;
 		color: white;
 	}
@@ -1527,7 +1529,7 @@
 
 	.company__btn{
 		margin-left: 180px;
-		margin-top: -260px;
+		margin-top: -20px;
 	 	padding-top: 0px;
 	 	display: flex;
 	 	border:2px solid #ffc222;
